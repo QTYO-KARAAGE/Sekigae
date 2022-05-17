@@ -1,19 +1,10 @@
 /*
- 11/16/2021 8:30 am
- THIS PROGRAM HAS FATAL BUG!
- DO NOT USE THIS PROGRAM!
- 
- 11/16/2021 10:00 am
- FIXED BUG!
- YOU CAN USE THIS PROGRAM.
- THANK YOU.
- 
  CREATED BY @QTYO_KARAAGE
 */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MEMBER 39
+#define MEMBER 40
 
 int main(void)
 {
@@ -35,7 +26,7 @@ int main(void)
 		seat_no = (rand() % MEMBER + 1);
 		
 		x = 0;
-		while(x < MEMBER){ //被りがないかチェック
+		while(x < MEMBER){ //陲ｫ繧翫′縺ｪ縺�縺九メ繧ｧ繝�繧ｯ
 			for (n = 0; n < MEMBER; n++){
 				if(seat[n] == seat_no){
 					seat_no = (rand() % MEMBER + 1);
@@ -49,7 +40,7 @@ int main(void)
 	}
 	
 	for (i = 0; i < MEMBER; i++){
-		printf("座席番号%2d >> 出席番号%2d\n", i + 1, seat[i]);
+		printf("蠎ｧ蟶ｭ逡ｪ蜿ｷ%2d >> 蜃ｺ蟶ｭ逡ｪ蜿ｷ%2d\n", i + 1, seat[i]);
 	}
 	return (0);
 }
